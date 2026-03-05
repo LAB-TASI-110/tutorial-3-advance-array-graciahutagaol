@@ -37,7 +37,6 @@ int main() {
         }
     }
 
-    // Menghitung rentang nilai (maksimum - minimum)
     int range = max_score - min_score;
     
     // Menampilkan jumlah, rata-rata, banyaknya mahasiswa di atas rata-rata, dan rentang nilai sesuai format

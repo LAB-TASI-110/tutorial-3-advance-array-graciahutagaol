@@ -1,21 +1,25 @@
 #include <stdio.h>
 
-#define MAX_N 1000 
+#define MAX_N 1000 // Batasan maksimum untuk jumlah nilai
 
 int main() {
     int n, i;
-    int scores[MAX_N]; 
+    int scores[MAX_N]; // Array untuk menyimpan nilai-nilai
     int sum = 0;
     
+    // Membaca jumlah nilai (n)
     scanf("%d", &n);
     
+    // Membaca n nilai dan menghitung jumlahnya, serta menyimpannya ke dalam array
     for (i = 0; i < n; i++) {
         scanf("%d", &scores[i]);
         sum += scores[i];
     }
     
+    // Menghitung rata-rata
     double average = (double)sum / n;
     
+    // Menghitung banyaknya mahasiswa yang nilainya di atas atau sama dengan rata-rata
     int count_above_average = 0;
     for (i = 0; i < n; i++) {
         if (scores[i] >= average) {
@@ -23,6 +27,7 @@ int main() {
         }
     }
     
+    // Menampilkan jumlah, rata-rata, dan banyaknya mahasiswa di atas rata-rata sesuai format
     printf("%d\n", sum);
     printf("%.2f\n", average);
     printf("%d\n", count_above_average);
