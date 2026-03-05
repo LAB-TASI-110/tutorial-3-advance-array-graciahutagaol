@@ -14,7 +14,6 @@ int main() {
         sum += score;
     }
     
-    // Menghitung rata-rata
     double average = (double)sum / n;
     
     // Menampilkan jumlah dan rata-rata sesuai format

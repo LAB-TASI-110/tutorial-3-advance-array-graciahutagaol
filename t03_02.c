@@ -19,7 +19,6 @@ int main() {
     // Menghitung rata-rata
     double average = (double)sum / n;
     
-    // Menghitung banyaknya mahasiswa yang nilainya di atas atau sama dengan rata-rata
     int count_above_average = 0;
     for (i = 0; i < n; i++) {
         if (scores[i] >= average) {
